@@ -161,7 +161,7 @@ section.sec{
 .img_user{
     width: 100%;
     max-width: 200px;
-    
+    height: 100px;
     position: relative;
     border-radius: 200px;
     left:50%;
@@ -498,6 +498,7 @@ section.sec3{
     }
 
 }
+
 
 
 
