@@ -163,7 +163,7 @@ section.sec{
     max-width: 200px;
     height: 230px;
     position: relative;
-    border-radius: 150px;
+    border-radius: 200px;
     left:50%;
     transform: translateX(-50%);
     box-shadow: 4px 2px 20px 7px rgba(204, 204, 204, 0.195);
@@ -172,6 +172,7 @@ section.sec{
 .img_user img{
     width: 100%;
     height: 100%;
+    border-radius:200px;
 }
 
 .text_user{
@@ -497,6 +498,7 @@ section.sec3{
     }
 
 }
+
 
 
 
