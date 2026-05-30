@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Desenvolvedor Web com 4 projetos reais no ar — HTML, CSS, JavaScript, PHP e MySQL. Sites estáticos e sistemas completos com login, banco de dados e fluxos de negócio. Aberto a vagas CLT e PJ.">
+  <meta name="keywords" content="desenvolvedor web, front-end, PHP, MySQL, JavaScript, HTML, CSS, vaga emprego, portfólio, LinkedIn, CLT, remoto">
+  <meta name="author" content="Desenvolvedor Web">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfólio | Desenvolvedor Web — Projetos Reais no Ar">
+  <meta property="og:description" content="HTML, CSS, JavaScript, PHP e MySQL aplicados em 4 projetos publicados — do site estático ao sistema web completo.">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://seusite.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Portfólio | Desenvolvedor Web — Projetos Reais no Ar">
+  <meta name="twitter:description" content="HTML, CSS, JavaScript, PHP e MySQL aplicados em 4 projetos publicados — do site estático ao sistema web completo.">
+
+  <title>Portfólio | Desenvolvedor Web — Aberto a Oportunidades</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23000'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23F5F5F5' font-family='monospace' font-size='14' font-weight='bold'%3E%3C/%3E%3C/text%3E%3C/svg%3E">
+  <link rel="canonical" href="https://seusite.com/">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Dados estruturados — SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Desenvolvedor Web",
+    "url": "https://seusite.com/",
+    "jobTitle": "Desenvolvedor Web",
+    "description": "Desenvolvedor Web em busca de oportunidades CLT ou PJ. Projetos reais com HTML, CSS, JavaScript, PHP e MySQL — sites estáticos e sistemas web completos.",
+    "seeks": {
+      "@type": "Demand",
+      "name": "Desenvolvedor Front-end"
+    },
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Desenvolvimento Web"],
+    "sameAs": [
+      "https://github.com",
+      "https://linkedin.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link — acessibilidade -->
+  <a href="#hero" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- Cursor glow — efeito sutil (Fase 1) -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#hero" class="nav__logo" aria-label="Ir para o início">
+        <span class="nav__logo-mark">&lt;/&gt;</span>
+        <span class="nav__logo-text">dev.</span>
+      </a>
+
+      <button
+        class="nav__toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projetos" class="nav__link">Projetos</a></li>
+        <li><a href="#contato" class="nav__link nav__link--cta">Fale comigo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero" aria-label="Apresentação">
+      <!-- Luzes flutuantes de fundo -->
+      <div class="hero__ambient" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow reveal" data-reveal-delay="0">
+          <span class="hero__status-dot"></span>
+          Aberto a novas oportunidades
+        </p>
+
+        <h1 class="hero__title">
+          <span class="hero__title-line reveal" data-reveal-delay="1">
+            Desenvolvedor Web
+          </span>
+          <span class="hero__title-line reveal" data-reveal-delay="2">
+            do layout ao <em class="hero__title-accent">sistema completo</em>
+          </span>
+        </h1>
+
+        <p class="hero__description reveal" data-reveal-delay="3">
+          Construo sites e sistemas web com a stack que meus projetos comprovam:
+          <strong class="hero__description-accent">HTML, CSS, JavaScript, PHP e MySQL</strong>.
+          Quatro projetos publicados e funcionando — prontos para serem avaliados.
+        </p>
+
+        <ul class="hero__stack reveal" data-reveal-delay="3" aria-label="Stack principal">
+          <li class="hero__stack-tag">HTML5</li>
+          <li class="hero__stack-tag">CSS3</li>
+          <li class="hero__stack-tag">JavaScript</li>
+          <li class="hero__stack-tag">PHP</li>
+          <li class="hero__stack-tag">MySQL</li>
+        </ul>
+
+        <div class="hero__actions reveal" data-reveal-delay="4">
+          <a href="#projetos" class="btn btn--primary">
+            Ver projetos
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          
+        </div>
+
+        
+      </div>
+
+      <!-- Indicador de scroll -->
+      <a href="#sobre" class="hero__scroll" aria-label="Rolar para a próxima seção">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ==================== SOBRE MIM ==================== -->
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+
+        <header class="section-header reveal-scroll">
+          <span class="section-label">Sobre mim</span>
+          <h2 class="section-title" id="about-title">
+            Da landing page ao<br>
+            <span class="section-title__muted">sistema web com banco de dados</span>
+          </h2>
+        </header>
+
+        <div class="about__layout">
+          <div class="about__main">
+            <div class="about__intro reveal-scroll">
+              <p class="about__intro-lead">
+                Desenvolvedor Web com projetos reais no ar — não só estudo, mas código
+                publicado e acessível para qualquer recrutador avaliar.
+              </p>
+              <p>
+                Comecei com sites estáticos em HTML, CSS e JavaScript (landing pages
+                na Vercel). Evoluí para sistemas web completos com PHP e MySQL:
+                login, cadastro, pedidos, agendamentos e área do cliente.
+              </p>
+              <p>
+                Busco uma vaga onde possa aplicar essa base sólida, aprender com o
+                time e entregar interfaces e funcionalidades que gerem resultado
+                para o negócio.
+              </p>
+            </div>
+
+            <div class="about__cards">
+              <article class="about-card reveal-scroll" data-reveal-delay="1">
+                <div class="about-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <path d="M3 9h18M9 21V9"/>
+                  </svg>
+                </div>
+                <h3 class="about-card__title">Sites que convertem</h3>
+                <p class="about-card__text">
+                  Landing pages publicadas com layout responsivo, hierarquia visual
+                  clara e foco em apresentar produto ou serviço de forma profissional.
+                </p>
+              </article>
+
+              <article class="about-card reveal-scroll" data-reveal-delay="2">
+                <div class="about-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <h3 class="about-card__title">Sistemas integrados</h3>
+                <p class="about-card__text">
+                  Front-end responsivo conectado a back-end PHP e banco MySQL —
+                  autenticação, persistência de dados e fluxos reais de negócio.
+                </p>
+              </article>
+
+              <article class="about-card reveal-scroll" data-reveal-delay="3">
+                <div class="about-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  </svg>
+                </div>
+                <h3 class="about-card__title">Projetos no ar</h3>
+                <p class="about-card__text">
+                  Cada case deste portfólio tem link ativo. Você pode clicar,
+                  testar e ver na prática o que eu entrego — sem mockups ou promessas.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Certificações -->
+          <aside class="about__certs reveal-scroll" aria-label="Certificações">
+            <div class="certs">
+              <header class="certs__header">
+                <div class="certs__header-top">
+                  <h3 class="certs__title">Certificações</h3>
+                  <span class="certs__count" aria-label="3 certificados">3</span>
+                </div>
+                <p class="certs__subtitle">Credenciais verificáveis online</p>
+              </header>
+
+              <div class="certs__list">
+
+                <article class="cert-card">
+                  <div class="cert-card__top">
+                    <div class="cert-card__badge" aria-hidden="true">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 15l-2 5 2-1 2 1-2-5z"/>
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M9.5 8l1.5 1.5L14.5 6"/>
+                      </svg>
+                    </div>
+                    <div class="cert-card__content">
+                      <span class="cert-card__tag">Front-end</span>
+                      <h4 class="cert-card__name">Curso Webmaster Front-end Completo</h4>
+                      <p class="cert-card__issuer">Danki Code</p>
+                      <time class="cert-card__date" datetime="2026-04-27">Concluído em 27/04/2026</time>
+                    </div>
+                  </div>
+                  <a
+                    href="https://cursos.dankicode.com/api/certificados/f08f9f8c-2230-4484-b764-7116287d1a00"
+                    class="cert-card__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visualizar certificado Webmaster Front-end Completo"
+                  >
+                    <span>Visualizar certificado</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </a>
+                </article>
+
+                <article class="cert-card">
+                  <div class="cert-card__top">
+                    <div class="cert-card__badge" aria-hidden="true">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 15l-2 5 2-1 2 1-2-5z"/>
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M9.5 8l1.5 1.5L14.5 6"/>
+                      </svg>
+                    </div>
+                    <div class="cert-card__content">
+                      <span class="cert-card__tag">Back-end</span>
+                      <h4 class="cert-card__name">Curso de PHP, MySQL</h4>
+                      <p class="cert-card__issuer">Danki Code</p>
+                      <time class="cert-card__date" datetime="">Concluído em 27/04/2026</time>
+                    </div>
+                  </div>
+                  <a
+                    href="https://cursos.dankicode.com/api/certificados/19d35d07-2d16-4247-850d-c03e5f860337"
+                    class="cert-card__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visualizar certificado PHP e MySQL"
+                  >
+                    <span>Visualizar certificado</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </a>
+                </article>
+
+                <article class="cert-card">
+                  <div class="cert-card__top">
+                    <div class="cert-card__badge" aria-hidden="true">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 15l-2 5 2-1 2 1-2-5z"/>
+                        <circle cx="12" cy="8" r="6"/>
+                        <path d="M9.5 8l1.5 1.5L14.5 6"/>
+                      </svg>
+                    </div>
+                    <div class="cert-card__content">
+                      <span class="cert-card__tag">Desenvolvimento web</span>
+                      <h4 class="cert-card__name">Curso Desenvolvimento web</h4>
+                      <p class="cert-card__issuer">Danki Code</p>
+                      <time class="cert-card__date" datetime="">Concluído em 29/05/2026</time>
+                    </div>
+                  </div>
+                  <a
+                    href="https://cursos.dankicode.com/api/certificados/03a9ba0c-9b09-41da-bfea-a1d2390c8b9c"
+                    class="cert-card__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visualizar certificado JavaScript ES6+"
+                  >
+                    <span>Visualizar certificado</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                      <polyline points="15 3 21 3 21 9"/>
+                      <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                  </a>
+                </article>
+
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <header class="section-header reveal-scroll">
+          <span class="section-label">Skills</span>
+          <h2 class="section-title" id="skills-title">
+            Stack comprovada nos<br>
+            <span class="section-title__muted">projetos deste portfólio</span>
+          </h2>
+        </header>
+
+        <div class="skills__categories">
+          <article class="skill-category reveal-scroll" data-reveal-delay="1">
+            <div class="skill-category__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="skill-category__title">Front-end</h3>
+            <ul class="skill-category__tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsivo</li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal-scroll" data-reveal-delay="2">
+            <div class="skill-category__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+            </div>
+            <h3 class="skill-category__title">Back-end</h3>
+            <ul class="skill-category__tags">
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>Autenticação</li>
+              <li>CRUD</li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal-scroll" data-reveal-delay="3">
+            <div class="skill-category__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3 class="skill-category__title">Deploy &amp; Ferramentas</h3>
+            <ul class="skill-category__tags">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Vercel</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+
+          <article class="skill-category reveal-scroll" data-reveal-delay="4">
+            <div class="skill-category__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="skill-category__title">Qualidade</h3>
+            <ul class="skill-category__tags">
+              <li>SEO</li>
+              <li>Performance</li>
+              <li>Acessibilidade</li>
+              <li>Git Flow</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="skills__bars">
+          <h3 class="skills__bars-title reveal-scroll">Nível de proficiência</h3>
+
+          <div class="skill-bar reveal-scroll" data-reveal-delay="1">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">HTML / CSS</span>
+              <span class="skill-bar__value" data-progress="95">0%</span>
+            </div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-progress="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar reveal-scroll" data-reveal-delay="2">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">JavaScript</span>
+              <span class="skill-bar__value" data-progress="90">0%</span>
+            </div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-progress="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar reveal-scroll" data-reveal-delay="3">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">PHP / MySQL</span>
+              <span class="skill-bar__value" data-progress="82">0%</span>
+            </div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-progress="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar reveal-scroll" data-reveal-delay="4">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">UI &amp; Layout Responsivo</span>
+              <span class="skill-bar__value" data-progress="90">0%</span>
+            </div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-progress="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-bar reveal-scroll" data-reveal-delay="5">
+            <div class="skill-bar__header">
+              <span class="skill-bar__name">Performance &amp; SEO</span>
+              <span class="skill-bar__value" data-progress="85">0%</span>
+            </div>
+            <div class="skill-bar__track">
+              <div class="skill-bar__fill" data-progress="85"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJETOS ==================== -->
+    <section class="section projects" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+
+        <header class="section-header reveal-scroll">
+          <span class="section-label">Projetos</span>
+          <h2 class="section-title" id="projects-title">
+            4 projetos reais ·<br>
+            <span class="section-title__muted">clique e teste você mesmo</span>
+          </h2>
+        </header>
+
+        <!-- Trilha de evolução -->
+        <div class="evolution-track reveal-scroll" aria-label="Linha do tempo de evolução nos projetos">
+          <div class="evolution-track__step evolution-track__step--done">
+            <span class="evolution-track__dot"></span>
+            <span class="evolution-track__label">Fundamentos</span>
+          </div>
+          <div class="evolution-track__line evolution-track__line--active"></div>
+          <div class="evolution-track__step evolution-track__step--done">
+            <span class="evolution-track__dot"></span>
+            <span class="evolution-track__label">Estático</span>
+          </div>
+          <div class="evolution-track__line evolution-track__line--active"></div>
+          <div class="evolution-track__step evolution-track__step--current">
+            <span class="evolution-track__dot"></span>
+            <span class="evolution-track__label">Full Stack</span>
+          </div>
+          <div class="evolution-track__line"></div>
+          <div class="evolution-track__step">
+            <span class="evolution-track__dot"></span>
+            <span class="evolution-track__label">Produto</span>
+          </div>
+        </div>
+
+        <div class="projects__journey">
+
+          <!-- FASE 1 — Projetos estáticos -->
+          <div class="projects__phase">
+            <header class="projects__phase-header reveal-scroll">
+              <div class="projects__phase-meta">
+                <span class="projects__phase-tag">Fase 01</span>
+                <span class="projects__phase-year">Início da jornada</span>
+              </div>
+              <h3 class="projects__phase-title">Fase 01 · Sites estáticos publicados</h3>
+              <p class="projects__phase-desc">
+                Primeiros projetos no ar com <strong>HTML5, CSS3 e JavaScript</strong> —
+                layout responsivo, sem frameworks, deploy na Vercel.
+              </p>
+            </header>
+
+            <div class="projects__grid">
+
+              <!-- Dai_Livros -->
+              <article class="project-card project-card--early reveal-scroll" data-reveal-delay="0" data-tilt tabindex="0">
+                <div class="project-card__accent" aria-hidden="true"></div>
+                <div class="project-card__shine" aria-hidden="true"></div>
+                <div class="project-card__preview">
+                  <span class="project-card__stage-badge project-card__stage-badge--early">Estático · v1</span>
+                  <div class="project-card__evolution" aria-hidden="true">
+                    <div class="project-card__level-bar">
+                      <div class="project-card__level-fill" style="--level: 35%"></div>
+                    </div>
+                    <span class="project-card__level-text">Nível 1 · Fundamentos</span>
+                  </div>
+                  <img
+                    src="assets/projects/fase-01-estaticos/dai-livros-img.jpeg"
+                    alt="Captura de tela do projeto Dai_Livros — landing page de livro"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  >
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span class="project-card__index">01</span>
+                    
+                  </div>
+                  <h3 class="project-card__title">Dai_Livros</h3>
+                  <p class="project-card__highlight">Landing page publicada — conversão clara para divulgação de livro</p>
+                  <p class="project-card__desc">
+                    Site one-page com estrutura semântica, tipografia cuidada e layout
+                    mobile-first. Objetivo: apresentar o livro de forma rápida, elegante
+                    e profissional — com CTA visível e carregamento leve.
+                  </p>
+                  <ul class="project-card__stack">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Vercel</li>
+                  </ul>
+                  <div class="project-card__footer">
+                    <a href="https://dailivros.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                      Ver projeto
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Gesica_fotos -->
+              <article class="project-card project-card--early reveal-scroll" data-reveal-delay="1" data-tilt tabindex="0">
+                <div class="project-card__accent" aria-hidden="true"></div>
+                <div class="project-card__shine" aria-hidden="true"></div>
+                <div class="project-card__preview">
+                  <span class="project-card__stage-badge project-card__stage-badge--early">Estático · v1</span>
+                  <div class="project-card__evolution" aria-hidden="true">
+                    <div class="project-card__level-bar">
+                      <div class="project-card__level-fill" style="--level: 50%"></div>
+                    </div>
+                    <span class="project-card__level-text">Nível 2 · Refinamento</span>
+                  </div>
+                  <img
+                    src="assets/projects/fase-01-estaticos/gesica-fotos-img.jpeg"
+                    alt="Captura de tela do projeto Gesica_fotos — portfólio fotográfico"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  >
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span class="project-card__index">02</span>
+                    
+                  </div>
+                  <h3 class="project-card__title">Gesica_fotos</h3>
+                  <p class="project-card__highlight">Galeria leve e elegante para exibir fotografias profissionais</p>
+                  <p class="project-card__desc">
+                    Site estático focado em apresentação visual: grid de imagens,
+                    navegação fluida e layout responsivo — ideal para fotógrafos
+                    que precisam de presença digital rápida e profissional.
+                  </p>
+                  <ul class="project-card__stack">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Vercel</li>
+                  </ul>
+                  <div class="project-card__footer">
+                    <a href="https://gesica-fotos.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                      Ver projeto
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Ponte de evolução -->
+          <div class="projects__bridge reveal-scroll" aria-hidden="true">
+            <div class="projects__bridge-line"></div>
+            <div class="projects__bridge-card">
+              <svg class="projects__bridge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+              <p class="projects__bridge-title">Evolução constante</p>
+              <p class="projects__bridge-text">
+                De páginas estáticas para sistemas completos com login,
+                banco de dados e fluxos reais de negócio.
+              </p>
+            </div>
+            <div class="projects__bridge-line"></div>
+          </div>
+
+          <!-- FASE 2 — Projetos evoluídos -->
+          <div class="projects__phase projects__phase--advanced">
+            <header class="projects__phase-header reveal-scroll">
+              <div class="projects__phase-meta">
+                <span class="projects__phase-tag projects__phase-tag--advanced">Fase 02</span>
+                <span class="projects__phase-year">Nível atual</span>
+              </div>
+              <h3 class="projects__phase-title">Fase 02 · Sistemas web completos</h3>
+              <p class="projects__phase-desc">
+                Projetos com <strong>PHP, MySQL e JavaScript</strong> — autenticação,
+                persistência de dados e experiência pronta para uso real.
+              </p>
+            </header>
+
+            <div class="projects__grid">
+
+              <!-- Sistema para Barbearias -->
+              <article class="project-card project-card--advanced reveal-scroll" data-reveal-delay="0" data-tilt tabindex="0">
+                <div class="project-card__accent" aria-hidden="true"></div>
+                <div class="project-card__shine" aria-hidden="true"></div>
+                <div class="project-card__preview">
+                  <span class="project-card__stage-badge project-card__stage-badge--advanced">Produto · v2</span>
+                  <div class="project-card__evolution" aria-hidden="true">
+                    <div class="project-card__level-bar">
+                      <div class="project-card__level-fill project-card__level-fill--advanced" style="--level: 85%"></div>
+                    </div>
+                    <span class="project-card__level-text">Nível 3 · Interativo</span>
+                  </div>
+                  <img
+                    src="assets/projects/fase-02-evoluidos/barber-img.jpeg"
+                    alt="Captura de tela do sistema para barbearias — agendamentos e gestão"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  >
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span class="project-card__index">03</span>
+                    
+                  </div>
+                  <h3 class="project-card__title">Sistema para Barbearias</h3>
+                  <p class="project-card__highlight">Agendamentos online — gestão de clientes — painel administrativo</p>
+                  <p class="project-card__desc">
+                    Sistema web completo para barbearias: agendamento de horários,
+                    controle de serviços e experiência moderna para cliente e dono
+                    do negócio. Desenvolvido com JavaScript, PHP e MySQL.
+                  </p>
+                  <ul class="project-card__stack">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                  </ul>
+                  <div class="project-card__footer">
+                    <a href="https://project-barbearia.x10.mx/" class="project-link" target="_blank" rel="noopener noreferrer">
+                      Ver projeto
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Sistema de Delivery -->
+              <article class="project-card project-card--advanced reveal-scroll" data-reveal-delay="1" data-tilt tabindex="0">
+                <div class="project-card__accent" aria-hidden="true"></div>
+                <div class="project-card__shine" aria-hidden="true"></div>
+                <div class="project-card__preview">
+                  <span class="project-card__stage-badge project-card__stage-badge--advanced">Produto · v2</span>
+                  <div class="project-card__evolution" aria-hidden="true">
+                    <div class="project-card__level-bar">
+                      <div class="project-card__level-fill project-card__level-fill--advanced" style="--level: 100%"></div>
+                    </div>
+                    <span class="project-card__level-text">Nível 4 · Produto completo</span>
+                  </div>
+                  <img
+                    src="assets/projects/fase-02-evoluidos/delivery-img.jpeg"
+                    alt="Captura de tela do sistema de delivery — login, pedidos e área do cliente"
+                    class="project-card__image"
+                    loading="lazy"
+                    width="800"
+                    height="450"
+                  >
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__meta">
+                    <span class="project-card__index">04</span>
+                    
+                  </div>
+                  <h3 class="project-card__title">Sistema de Delivery</h3>
+                  <p class="project-card__highlight">Login · pedidos · área do cliente — pronto para restaurantes e lanchonetes</p>
+                  <p class="project-card__desc">
+                    Plataforma web para delivery com cadastro seguro, gestão de perfil
+                    e fluxo completo de pedidos. Front-end responsivo integrado a PHP
+                    e MySQL. Adaptável para hamburguerias, pizzarias, cafés e similares.
+                  </p>
+                  <ul class="project-card__stack">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                  </ul>
+                  <div class="project-card__footer">
+                    <a href="https://projeto-food.x10.mx/" class="project-link" target="_blank" rel="noopener noreferrer">
+                      Ver projeto
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTATO ==================== -->
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+
+        <header class="section-header reveal-scroll">
+          <span class="section-label">Vamos conversar</span>
+          <h2 class="section-title" id="contact-title">
+            Interessado em me<br>
+            <span class="section-title__muted">contratar ou entrevistar?</span>
+          </h2>
+        </header>
+
+        <div class="contact__layout">
+
+          <!-- Informações -->
+          <aside class="contact__info reveal-scroll">
+            <p class="contact__text">
+              Aberto a vagas CLT, PJ e remoto. Se você é recrutador ou gestor,
+              pode testar meus 4 projetos online e entrar em contato para
+              agendar uma entrevista — respondo em até 24 horas.
+            </p>
+
+            <ul class="contact__details">
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="M2 7l10 7 10-7"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">E-mail</span>
+                  <a href="mailto:contato@email.com" class="contact__detail-value">aliso.1souzw@gmail.com</a>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Localização</span>
+                  <span class="contact__detail-value">Brasil · Remoto</span>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Disponibilidade</span>
+                  <span class="contact__detail-value">Imediata · CLT ou PJ</span>
+                </div>
+              </li>
+              <li class="contact__detail">
+                <span class="contact__detail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </span>
+                <div>
+                  <span class="contact__detail-label">Retorno</span>
+                  <span class="contact__detail-value">Em até 24 horas</span>
+                </div>
+              </li>
+            </ul>
+
+            
+          </aside>
+
+          <!-- Formulário -->
+          <form class="contact__form reveal-scroll" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Seu nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Nome do recrutador ou gestor"
+                autocomplete="name"
+                required
+              >
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="E-mail corporativo"
+                autocomplete="email"
+                required
+              >
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Vaga / Empresa</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-input"
+                placeholder="Ex: Front-end Pleno na Empresa X"
+                required
+              >
+              <span class="form-error" id="subjectError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-input--textarea"
+                placeholder="Conte sobre a vaga, o time e próximos passos..."
+                rows="5"
+                required
+              ></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary form-submit" id="formSubmit">
+              Enviar
+              <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              WhatsApp aberto! Confirme o envio da mensagem no aplicativo.
+            </p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo" aria-label="Voltar ao início">
+          <span class="nav__logo-mark">&lt;/&gt;</span>
+          <span>dev.</span>
+        </a>
+        <p class="footer__tagline">
+          Desenvolvedor Web · Aberto a oportunidades.
+        </p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#sobre" class="footer__link">Sobre</a>
+        <a href="#skills" class="footer__link">Skills</a>
+        <a href="#projetos" class="footer__link">Projetos</a>
+        <a href="#contato" class="footer__link">Fale comigo</a>
+      </nav>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; <span id="footerYear"></span> Portfólio. Todos os direitos reservados.
+        </p>
+        <button type="button" class="footer__top" id="backToTop" aria-label="Voltar ao topo">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 3v10M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Topo
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
